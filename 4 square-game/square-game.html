@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>square-game</title>
+  <style>
+    body {
+      overflow-y: hidden;
+    }
+
+    .grandparent {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .parent {
+      display: grid;
+      grid-template-columns: repeat(2, 200px);
+      grid-template-rows: repeat(2, 200px);
+      gap: 10px;
+    }
+
+    .child {
+      border: 2px solid black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="grandparent">
+    <div class="parent">
+      <div id="sq1" class="child" ><h1>1</h1></div>
+      <div id="sq2" class="child" ><h1>2</h1></div>
+      <div id="sq3" class="child" ><h1>3</h1></div>
+      <div id="sq4" class="child" ><h1>4</h1></div>
+    </div>
+    
+  </div>
+  
+  <script src="./square-game.js"></script>
+</body>
+</html>
