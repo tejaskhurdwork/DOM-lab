@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>profile-card-generator</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      margin: 2rem;
+    }
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    .card {
+      width: 15rem; 
+      padding: 1.5rem;
+      border-radius: 12px;
+      border: 6px solid rgb(0, 0, 0);
+      text-align: center;
+      background: #fff;
+    }
+
+    .card img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+      border: 4px solid #ffffff;
+    }
+
+    .card h2 {
+      margin: 0.5rem 0;
+      font-size: 1.4rem;
+      color: #333;
+    }
+
+    .card p {
+      margin: 0.3rem 0;
+      color: #666;
+      font-size: 0.95rem;
+    }
+
+    form input {
+      display: block;
+      margin-bottom: 0.8rem;
+      padding: 0.4rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+
+    <form>
+      <input class="inp" type="url" placeholder="Profile image URL" >
+      <input class="inp" type="text" placeholder="Name" >
+      <input class="inp" type="number" placeholder="Age" min="5" >
+      <input class="inp" type="email" placeholder="Email" >
+      <input type="submit" value="Generate Card">
+    </form>
+
+    <div class="card-container"></div>
+
+  </div>
+
+  <script src="profile-card-generator.js"></script>
+</body>
+</html>
