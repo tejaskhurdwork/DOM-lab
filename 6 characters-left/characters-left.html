@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Character Counter</title>
+  <style>
+    body {
+      background-color: #222;
+      color: white;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    input {
+      padding: 10px;
+      font-size: 16px;
+      border: 2px solid white;
+      border-radius: 5px;
+      background-color: #333;
+      color: white;
+    }
+
+    .btn {
+      padding: 10px 15px;
+      font-size: 16px;
+      border: 2px solid white;
+      border-radius: 5px;
+      background-color: #333;
+      color: white;
+    }
+
+  </style>
+</head>
+<body>
+
+  <form>
+    <input type="text" placeholder="Type here..." />
+    <h1>Character Left: <span>20</span></h1>
+    <button class="btn" type="button">Submit</button>
+  </form>
+  
+
+  <script src="./characters-left.js"></script>
+</body>
+</html>
